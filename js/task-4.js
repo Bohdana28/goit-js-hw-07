@@ -11,7 +11,7 @@ function handleSubmit(event) {
         password: elements.password.value,
     };
 
-    if (info.email === "") {
+    if (info.email && info.password === "") {
         alert("All form fields must be filled in")
     } else {
         console.log(info);
